@@ -1,0 +1,124 @@
+#logo1{
+    position: absolute;
+    top: -2rem;        
+    width: 10vw;
+    height: 20vh;
+}
+
+#logo2 {
+    position: absolute;
+    left: 50%; /* Align the element to the center horizontally */
+    transform: translateX(-50%); /* Center the element horizontally */
+    width: 13vw; /* Set width to 100% of the parent element (login_frame) */
+    padding: 0 calc((100% - 60rem) / 2); /* Calculate padding based on the width of login_frame */
+    top: 10vh;
+    height: 25vh;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    background: url(IMG/background.png) no-repeat;
+    background-size: cover;
+    outline: 2px solid pink;
+    width: 100vw; 
+    height: 100vh; 
+    margin: 0; 
+    padding: 0;
+}
+
+h1{
+    position: absolute;
+    transform: translateX(-50%);
+    top: 22vh;
+    left: 50%;
+    font-size: 3vw;
+}
+
+#login_frame{
+    background: url(IMG/login%20frame.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60rem;
+    height: 100%;
+}
+
+#idIcon{
+    position: absolute;
+    height: 8rem;
+    top: 37vh;
+    left: 10vw;
+    
+}
+
+#pwdIcon{
+    position: absolute;
+    height: 8rem;
+    top: 47vh;
+    left: 10vw;
+}
+
+#forgot{
+    position: absolute;
+    font-size: 2.5vh;
+    left: 13vw;
+    bottom: 35vh;
+}
+
+#chat_box{
+    position: absolute;
+    right: 6vw;
+    bottom: 0vh;
+    height: 25vh;
+}
+
+#login_button{
+    position: absolute;
+    width: 20vw;
+    right: 0;
+    bottom: 17vh;
+}
+
+nav {
+    position: absolute;
+    bottom: 18vh;
+    width: 100%;
+    text-align: center; /* Align the content to the right */
+}
+
+nav ul {
+    
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline; /* Ensure list items are displayed inline */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    font-size: 2vh;
+}
+
+
+
+#footer{
+    position: absolute;
+    font-size: 1.2vw;
+    bottom: 3vh;
+    left: 43vw;
+    margin: 0;
+}
+
+
+
+
+
+
+
