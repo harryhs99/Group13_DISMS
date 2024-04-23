@@ -1,0 +1,175 @@
+#logo1{
+    position: absolute;
+    top: -2rem;        
+    width: 10rem;
+    height: 10rem;
+    z-index: 1;
+    clip-path: rect(60px, 130px, 100px, 30px);
+}
+
+#logo2 {
+    position: absolute;
+    left: 50%; /* Align the element to the center horizontally */
+    transform: translateX(-50%); /* Center the element horizontally */
+    width: 12rem; /* Set width to 100% of the parent element (login_frame) */
+    top: 5rem;
+    height: 13rem;
+    clip-path: rect(70px, 160px, 130px, 30px);
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    background: url('../imgs/background.png') no-repeat;
+    background-size: cover;
+    outline: 2px solid pink;
+    width: 100vw; 
+    height: 100vh; 
+    margin: 0; 
+    padding: 0;
+}
+
+h1{
+    position: absolute;
+    transform: translateX(-50%);
+    top: 11rem;
+    left: 50%;
+    font-size: 3.5rem;
+    font-family: arial;
+    text-shadow: 3px 2px gray;
+}
+
+#login_frame{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    height: 48.5rem;
+}
+
+#login_frame::after{ /* making my login frame opacity */
+    content: '';
+    position: absolute;
+    z-index: -2;
+    inset: 0; /* cover the entire area */
+    background: pink;
+    opacity: 0.8;
+    background: url('../imgs/login frame.png');
+    background-size: 100% 100%;
+}
+
+#idIcon{
+    position: absolute;
+    height: 6rem;
+    top: 19.2rem;
+    left: 8rem;
+    clip-path: rect(20px, 70px, 80px, 25px);
+
+}
+
+#pwdIcon{
+    position: absolute;
+    height:8rem;
+    top: 21.8rem;
+    left: 7rem;
+    clip-path: rect(35px, 87px, 95px, 40px);
+
+}
+
+input[type="text"]{
+    width: 34rem;
+    height: 3.3rem;
+    position: absolute;
+    top: 20.5rem;
+    left: 9rem;
+    z-index: -1;
+    text-indent: 4rem;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    opacity: 0.8;
+}
+
+input[type="password"]{
+    width: 34rem;
+    height: 3.3rem;
+    position: absolute;
+    top: 24.1rem;
+    left: 9rem;
+    z-index: -1;
+    text-indent: 4rem;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    opacity: 0.8;
+}
+
+
+#forgot{
+    position: absolute;
+    font-size: 1.25rem;
+    left: 10rem;
+    bottom: 18rem;
+}
+
+#login_button{
+    position: absolute;
+    width: 10rem;
+    height: 4rem;
+    right: 6.5rem;
+    bottom: 16.5rem;
+    z-index: -1; /* go 1 step backward for not blocking my link */
+    clip-path: rect(110px, 210px, 160px, 70px); /* crop img */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* make the hover transition smoother (process to 0.3s)*/
+} 
+
+#login_button:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+nav {
+    position: absolute;
+    bottom: 10rem;
+    width: 50rem;
+    text-align: center; /* Align the content to the right */
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline; /* Ensure list items are displayed inline */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    font-size: 1.1rem;
+    
+}
+
+a:hover {
+    color: blue; /* Change text color on hover */
+    text-decoration: none;
+}
+
+#footer{
+    position: absolute;
+    font-size: 1.2rem;
+    bottom: 2rem;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+

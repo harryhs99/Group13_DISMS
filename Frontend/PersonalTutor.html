@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Personal Tutor</title>
+    <link rel="stylesheet" href="assets/css/PersonalTutor.css"/>
+    
+    <!---- Boxicons Icon ---->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    
+<body>
+
+    <section class="headerpage">
+            <button class="toggle" id="navbar_toggle"></button>
+        
+        <div class="title">
+                <img id="dysonLogo" src="assets/imgs/dysonLogo.png">
+                <span id="sub">Personal Tutor</span>
+                <img id="subjectLogo" src="assets/imgs/personalTutorIcon.png">
+        </div>
+        
+        <div class="list">
+            <img id="homeLogo" src="assets/imgs/homeLogo.png">
+            <img id="notification" src="assets/imgs/notificationLogo.png">
+            <img id="functionLogo" src="assets/imgs/functionLogo.png">
+            <a href="Dyson%20Login.html"><img id="profile" src="assets/imgs/profileLogo.png"></a>
+        </div>
+        
+    </section>
+
+    <section class="bodyContent">
+        
+        <header class="tab-nav">
+            <a href="#" class="active" data-id="0">Absence</a>
+            <a href="#"  data-id="1">Meeting</a>
+        </header>
+        
+        <div class="pane" >
+        <section class="absence">
+            <form action="" class="attendance" id="attendance" >
+            
+            <label for="reasonId" class="reasonClass" id="reasonID">Reason for absence request: </label>
+                <select name="reasonName" id="reasonId" class="reasonSelect" >
+                    <option value="0001">Sickness# self-certified</option>
+                    <option value="0002">Sickness# medical-certified</option>
+                    <option value="0003">Holiday</option>
+                    <option value="0004">other</option>
+                </select><br>
+                
+            <tr class="date">
+                <td width="25%">
+                    <td width="1%"><label for="startDate">First date of absence:</label></td>
+                    <td width="39%"><input type="date" id="startDate" name="start_Date" lang="en" required></td><br>
+                    <td width="1%"><label for="endDate">Last date of absence:</label></td>
+                    <td width="39%"><input type="date" id="endDate" name="end_Date" lang="en" required></td><br>
+            </tr>
+            
+                <div class="time">
+            <label for="STimeId" class="STimeClass" id="STimeID">Start time of absence: </label>
+            <select name="STimeName" id="STimeId" class="STimeSelect" required>
+                <option value="0001">07:00-12:00</option>
+                <option value="0002">12:00-17:00</option>
+                <option value="0003">17:00-19:00</option>
+            </select><br>
+
+            <label for="ETimeId" class="ETimeClass" id="ETimeID">End time of absence: </label>
+            <select name="ETimeName" id="ETimeId" class="ETimeSelect"required >
+                <option value="0001">07:00-12:00</option>
+                <option value="0002">12:00-17:00</option>
+                <option value="0003">17:00-19:00</option>
+            </select><br>
+                    
+                </div>
+                   
+            <label for="reasonId" class="reasonClass" id="reasonID">Please input your description</label><br>
+            <textarea class="text" id="text" rows="4" required placeholder="Write your comment..." required></textarea><br>
+                  
+            <input type="image" src="assets/imgs/qnaSubmit.png" class="attendenceBtn" id="attendenceBtn" value="submit">
+                
+        </form>
+            
+        </section>
+        </div>
+        
+        <div class="pane" style="display: none;">
+            <section class="meeting">
+                 <form action="" class="meeting" id="meeting" >
+                     <p>Tutor Name : </p><span>Professor Simon</span> <br>
+                    <p>Tutor ID : </p><span>L123456</span> <br>
+                     <p>Tutor Email Address : </p><span>L123456@newcastle.ac.uk</span>
+                     
+                <div class="date">
+                <td width="1%">
+                    <label for="bookDate">Booking Date :</label>
+                </td>
+                <td width="39%">
+                    <input type="date" id="bookDate" name="book_Date" lang="en" required>
+                </td><br>
+                <label for="bookTime" id="dateID" class="dateID">Booking Time :</label>
+                    
+                <select name="selectTime" id="bookTime" class="selectTIme" required>
+                    <option value="0001">09:00</option>
+                    <option value="0002">10:00</option>
+                    <option value="0003">11:00</option>
+                    <option value="0003">13:00</option>
+                </select><br>
+                </div>        
+                
+                <input type="image" src="assets/imgs/qnaSubmit.png" class="meetingBtn" id="meetingBtn" value="submit">
+                <div class="inputbox">
+                    <label for="reasonId" class="reasonClass" id="reasonID">Please input your description</label><br>
+                    <textarea class="text2" id="text2" rows="4" required placeholder="Write your comment..." required></textarea><br>
+                </div>
+                     
+               
+                <!-- because every student have been assigned their own tutors, here I don't collect their tutors' info -->
+                
+            </form>
+        
+            </section>
+        </div>
+    </section>
+    
+    
+    
+    <nav class="sidebar close">
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-calendar icon'></i>
+                            <span class="text nav-text">Timetable</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-pencil icon'></i>
+                            <span class="text nav-text">Examination</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-book-open icon'></i>
+                            <span class="text nav-text">Subjects</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-user-detail icon'></i>
+                            <span class="text nav-text">Personal Tutor</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    </nav>
+    
+    
+    <script src="assets/js/PersonalTutor.js"></script>
+</body>
+</html>

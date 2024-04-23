@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Kanit; 
+}
+
+body{
+    background-image: url('../imgs/background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.headerpage{
+    align-items: center;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.6); 
+    position: relative;
+}
+
+/*-------Top navbar-------*/
+
+#navbar_toggle{
+   position: absolute;
+   width: 2rem;
+   height: 2rem;
+   top: 0.6rem;
+   left: 1.2rem;
+   border: none;
+   background-color: transparent; 
+   background: url(../imgs/sidebar.png) center center no-repeat;
+   background-size: 19rem;
+   cursor: pointer;
+}
+
+#navbar_toggle:hover{
+    transform: scale(1.1);
+}
+
+
+
+#dysonLogo{
+    height: 2rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 4rem
+}
+
+#sub{
+    font-size: 2rem;
+    position: absolute;
+    left: 9.0rem;
+    color:#2196f3;
+}
+
+#subjectLogo{
+    position: absolute;
+    top: 0.3rem;
+    left: 17rem;
+    background-color: transparent;
+    height: 2.5rem;
+    border-radius: 1rem;
+}
+
+#homeLogo{
+    position: absolute;
+    height: 2.3rem;
+    top: 0.4rem;
+    right: 18rem;
+}
+
+#homeLogo:hover{
+    transform: scale(1.1);
+}
+
+#notification{
+    position: absolute;
+    height: 2.3rem;
+    top: 0.4rem;
+    right: 13rem;
+}
+
+#notification:hover{
+    transform: scale(1.1);
+}
+
+#functionLogo{
+    position: absolute;
+    height: 2.3rem;
+    top: 0.4rem;
+    right: 8rem;
+}
+
+#functionLogo:hover{
+    transform: scale(1.1);
+}
+
+#profile{
+    position: absolute;
+    height: 2.3rem;
+    top: 0.4rem;
+    right: 3rem;
+}
+
+#profile:hover{
+    transform: scale(1.1);
+}
+
+/*-------Body content-------*/
+
+#announcement{
+    opacity: 0.7;
+    background-color: white;
+    margin: 1rem;
+    height: 10rem;
+    width: 75.65rem;
+    top: 14rem;
+    border-radius: 20px;
+}
+
+#ann{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    left: 22rem;
+    top: 6rem;
+}
+
+#horn{
+    position: absolute;
+    height: 7rem;
+    left: 11rem;
+    top: 6rem;
+}
+
+
+.bodyContent{
+    margin: 0 9rem;
+}
+
+#module1, #module2, #module3, #module4{
+    background-color: white;
+    margin: 1rem 1rem 1rem 1rem;
+    height: 14rem;
+    width: 36.3rem;
+    top: 14rem;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.7)
+}
+
+#module1{
+    position: absolute;
+    top: 15rem;
+}
+
+#module2{
+    position: absolute;
+    left: 48.5rem;
+    top: 15rem;
+}
+#module3{
+    position: absolute;
+    top: 31rem;
+}
+#module4{
+    position: absolute;
+    left: 48.5rem;
+    top: 31rem;
+}
+.modTitle{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+#img1{
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    top: 2rem;
+    left: 2rem;
+}
+
+#img2{
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    top: 2rem;
+    left: 2rem;
+}
+
+#img3{
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    top: 2rem;
+    left: 2rem;
+}
+
+#img4{
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    top: 2rem;
+    left: 2rem;
+}
+
+/*-------Side Panel-------*/
+.sidebar{
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    height: 100%;
+    width: 18rem;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar.close{
+    display: none;
+}
+
+
+.sidebar li{
+    height: 4rem;
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    font-size: 2.1rem;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar li .text{
+    font-size: 1.5rem; 
+}
+
+.sidebar li a{
+    height: 3rem;
+    width: 16.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 12px;
+    color: indigo; 
+}
+
+.sidebar li a:hover{
+    background-color: rgba(33, 150, 243, 0.2);
+    transform: scale(1.05);
+}
+
