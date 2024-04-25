@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 对应的dao文件 -->
+<mapper namespace="com.example.StudentManagement.dao.UserRepository">
+    <!-- 增删改查标签操作基于mapper的方式 -->
+
+    <select id="findBySearch" resultType="com.example.StudentManagement.entity.User">
+        select * from user
+        <where>
+            <if test="params != null and params.userID != null and params.userID != ''">
+                and userID like concat('%', #{ params.userID }, '%')
+            </if>
+            <if test="params != null and params.telephone != null and params.telephone != ''">
+                and telephone like concat('%', #{params.telephone}, '%')
+            </if>
+        </where>
+    </select>
+
+</mapper>
