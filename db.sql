@@ -1,6 +1,9 @@
+
+
 DROP DATABASE IF EXISTS disms;
 
 CREATE DATABASE disms; 
+
 
 USE DATABASE disms;
 
@@ -78,47 +81,7 @@ CREATE TABLE TutorMeeting (
 
  
 
-CREATE TABLE Absence ( 
 
-    RequestID INT PRIMARY KEY, 
-
-    Student VARCHAR(10), 
-
-    Status VARCHAR(50), 
-
-    Module VARCHAR(10), 
-
-    Date DATE, 
-
-    Time TIME, 
-
-    Justification VARCHAR (300), 
-
-    FOREIGN KEY (Student) REFERENCES Student (UserID), 
-
-    FOREIGN KEY (Module) REFERENCES Module (ModuleCode) 
-
-); 
-
- 
-
-CREATE TABLE Extension ( 
-
-    RequestID INT PRIMARY KEY, 
-
-    Student VARCHAR(10), 
-
-    Status VARCHAR(50), 
-
-    Module VARCHAR(10), 
-
-    Justification VARCHAR (300), 
-
-    FOREIGN KEY (Student) REFERENCES Student (UserID), 
-
-    FOREIGN KEY (Module) REFERENCES Module (ModuleCode) 
-
-); 
 
  
 
@@ -209,5 +172,48 @@ CREATE TABLE Teaching (
     ModuleCode VARCHAR(10), 
 
     PRIMARY KEY (StaffID, ModuleCode) 
+
+); 
+
+
+CREATE TABLE Absence ( 
+
+    RequestID INT PRIMARY KEY, 
+
+    Student VARCHAR(10), 
+
+    Status VARCHAR(50), 
+
+    Module VARCHAR(10), 
+
+    Date DATE, 
+
+    Time TIME, 
+
+    Justification VARCHAR (300), 
+
+    FOREIGN KEY (Student) REFERENCES Student (UserID), 
+
+    FOREIGN KEY (Module) REFERENCES Module (ModuleCode) 
+
+); 
+
+ 
+
+CREATE TABLE Extension ( 
+
+    RequestID INT PRIMARY KEY, 
+
+    Student VARCHAR(10), 
+
+    Status VARCHAR(50), 
+
+    Module VARCHAR(10), 
+
+    Justification VARCHAR (300), 
+
+    FOREIGN KEY (Student) REFERENCES Student (UserID), 
+
+    FOREIGN KEY (Module) REFERENCES Module (ModuleCode) 
 
 ); 
