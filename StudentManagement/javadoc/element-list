@@ -1,0 +1,5 @@
+com.example.StudentManagement
+com.example.StudentManagement.controller
+com.example.StudentManagement.dao
+com.example.StudentManagement.entity
+com.example.StudentManagement.service
