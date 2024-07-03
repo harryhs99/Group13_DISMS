@@ -1,0 +1,60 @@
+sc.nextLine();//clear the current line of input
+                        System.out.println("please enter the subscriber's name");
+                        Subscriber currentSub = new Subscriber(sc.next(),sc.next());
+                        boolean isValidSubscriber=false;
+                        boolean isValidMeal=false;
+                        boolean isAvaiable=false;
+                        //int subscriberIndex=0;
+                        int mealIndex = 0;
+                        String mealName;
+                        int mealNum;
+                        for (Subscriber i:subscriberList) {
+                            if(i.compareTo(currentSub)==0){
+                                isValidSubscriber=true;//confirm that this is a valid subscriber
+                                currentSub=i;
+                                break;
+                            }
+                        }
+                        /*for (; subscriberIndex < subscriberList.size(); subscriberIndex++) {
+                            if(currentSub.compareTo(subscriberList.get(subscriberIndex))==0){
+                                isValidSubscriber=true;//confirm that this is a valid subscriber
+                                break;
+                            }
+                        }*/
+                        if(isValidSubscriber){
+                            sc.nextLine();//clear the current line of input
+                            System.out.println("please enter the meal name the subscriber want to add to the subscription");
+                            mealName=sc.next();
+                            //currentSub=subscriberList.get(subscriberIndex);
+                            for (; mealIndex <mealList.size() ; mealIndex++) {
+                                if(mealList.get(mealIndex).getMealName().equals(mealName)){
+                                    isValidMeal=true;//confirm that this is a valid meal
+                                    break;
+                                }
+                            }
+                        }
+                        else {System.out.println("Not a valid subscriber");break;}
+                        if(isValidMeal){
+                            System.out.println("please enter the number of this meal that the subscriber want to add to the subscription");
+                            mealNum=sc.nextInt();
+                            if (mealNum<=0){System.out.println("must be a positive integer");break;}
+                            //if(subscriberList.get(subscriberIndex).getSubscription().containsKey(mealName)){
+                            if(currentSub.getSubscription().containsKey(mealName)){
+                                //if the subscription already exists
+                                //mealNum=mealNum+subscriberList.get(subscriberIndex).getSubscription().get(mealName);
+                                mealNum=mealNum+currentSub.getSubscription().get(mealName);
+                            }
+                            if(mealList.get(mealIndex).getAvailableNum()>=mealNum){isAvaiable=true;}
+                        }
+                        else{System.out.println("Not a valid meal");break;}
+                        if(isAvaiable){
+                            currentSub.addSubsciption(mealName,mealNum);
+                            currentSub.printSubscription();
+                            //subscriberList.get(subscriberIndex).addSubsciption(mealName,mealNum);
+                            //subscriberList.get(subscriberIndex).printSubscription();
+                        }
+                        else{
+                            System.out.println("The available number of this meal is smaller than the subscription amount");
+                            break;
+                        }
+                        break;

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination</title>
+    <link rel="stylesheet" href="Examination.css"/>
+    <!---- Boxicons Icon ---->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    
+<body>
+
+    <section class="headerpage">
+            <button class="toggle" id="navbar_toggle"></button>
+        
+        <div class="title">
+                <img id="dysonLogo" src="IMG/dysonLogo.png"> 
+                <span id="exam">Examination</span>
+                <img id="examinationLogo" src="IMG/examinationLogo.png">
+        </div>
+        
+        <div class="list">
+            <a href="Main.html"><img id="homeLogo" src="IMG/homeLogo.png"></a>
+            <img id="notification" src="IMG/notificationLogo.png">
+            <img id="functionLogo" src="IMG/functionLogo.png">
+            <a href="DysonLogin.html"><img id="profile" src="IMG/profileLogo.png"></a>
+        </div>
+        
+    </section>
+
+    <section class="bodyContent">
+       
+        
+        <section class="coursework close" id="coursework">
+           <h2>Coursework Result</h2>
+            
+            <div class="module_1">
+                <h4 id="Dyson01">Dyson01</h4>
+                
+                <div class="moduleContent_1">
+                    <table class="table1" border="1">
+                        <tr>
+                            <td id="Dyson01C">Coursework:</td>
+                            <td id="Dyson01D">Due_date:</td>
+                        
+                        </tr>
+                        <tr>
+                            <td id="Dyson01R">Result:</td>
+                            <td><a href="Feedback.html" class="link">Feedback</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="module_2">
+               <h4 id="Dyson02">Dyson02</h4> 
+        
+                <div class="moduleContent_2">
+                    <table class="table2" border="1">
+                        <tr>
+                            <td id="Dyson02C">Coursework:</td>
+                            <td id="Dyson02D">Due_date:</td>
+                        
+                        </tr>
+                        <tr>
+                            <td id="Dyson02R">Result:</td>
+                            <td><a href="Feedback.html" class="link">Feedback</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="module_3">
+               <h4>Dyson03</h4> 
+        
+                <div class="moduleContent_3">
+                    <table class="table3" border="1">
+                        <tr>
+                            <td>Coursework:</td>
+                            <td>Due_date:</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Result:</td>
+                            <td><a href="Feedback.html" class="link">Feedback</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="module_4">
+               <h4>Dyson04</h4> 
+        
+                <div class="moduleContent_4">
+                    <table class="table4" border="1">
+                        <tr>
+                            <td>Coursework:</td>
+                            <td>Due_date:</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Result:</td>
+                            <td><a href="Feedback.html" class="link">Feedback</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <section class="pastYear close" id="pastYear">
+            <h2>Past Year Exam Paper</h2>
+            <span><a href="#" download="Dyson01_2021Paper">+ Dyson01_2021Paper</a></span><br>
+            <span><a href="#" download="Dyson01_2022Paper">+ Dyson01_2022Paper</a></span><br>
+            <span><a href="#" download="Dyson01_2023Paper">+ Dyson01_2023Paper</a></span><br>
+            <span></span><br>
+            <span><a href="#" download="Dyson02_2021Paper">+ Dyson02_2021Paper</a></span><br>
+            <span><a href="#" download="Dyson02_2022Paper">+ Dyson02_2022Paper</a></span><br>
+            <span><a href="#" download="Dyson02_2023Paper">+ Dyson02_2023Paper</a></span><br>
+        </section>
+        
+        <section class="submission close" id="submission">
+            <div class="mainPart">
+                <ul >
+                    <li><a href="#" class="list">Dyson01</a></li>
+                    <li><a href="#" class="list">Dyson02</a></li>
+                    <li><a href="#" class="list">Dyson03</a></li>
+                    <li><a href="#" class="list">Dyson04</a></li>
+                </ul>
+            </div>
+            <div class="submitBody">
+            <h2>Summit your coursework</h2>
+            <div class="courseName" id="courseName">CourseName:</div>
+            <div class="dueTime" id="dueTime">Due before: Get time from DB</div>
+            <form id="fileForm">
+                <fieldset>
+                    <legend>File to be submitted</legend>
+                    <div class="fileUpload">
+                        <label for="file_input">File:</label>
+                        <input type="file" id="file_input" name="file"><br>
+                        <button class="submitButton" id="submitButton" type="submit">submit</button>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+            <div class="uploadStatus" id="uploadStatus"> Status of submission</div>
+        </section>
+        
+        <section class="extension close" id="extension">
+        
+        <h2>EXTENSION</h2>
+        <form action="" class="extensionForm" id="extensionForm">
+            <h4>1) How are your studies and assessments being affected?</h4>
+            <table class="table">
+                <tbody class="tbody_1">
+                    <tr id="row1">
+                        <td>
+                            <label for="unableToSubmitMyWorkOnTime">
+                                <input type="checkbox" id="unableToSubmitMyWorkOnTime" name="unableToSubmitMyWorkOnTime_" class="ck" >
+                            </label>
+                            Unable to submit my work on time
+                        </td>
+                        
+                        <td>
+                            <label for="unableToSubmitMyWorkDespiteBeingGivenExtension">
+                                <input type="checkbox" id="unableToSubmitMyWorkDespiteBeingGivenExtension" name="unableToSubmitMyWorkDespiteBeingGivenExtension_" class="ck" >
+                            </label>
+                            Uable to submit my work despit being given extension
+                        </td>
+                    </tr>
+                    
+                    <tr id="row2">
+                        <td>
+                            <label for="unableToParticipateInGroupWork">
+                                <input type="checkbox" id="unableToParticipateInGroupWork" name="unableToParticipateInGroupWork_" class="ck" >
+                            </label>
+                            Unable to participate in group work
+                        </td>
+                        <td>
+                            <label for="unableToAttendMyExamsOrOtherSessions">
+                                <input type="checkbox" id="unableToAttendMyExamsOrOtherSessions" name="unableToAttendMyExamsOrOtherSessions_" class="ck">
+                            </label>
+                            Unable to attend my exam(s) or other session(s)
+                        </td>
+                    </tr>
+                
+                    <tr id="row3">
+                        <td>
+                            <label for="unableToAttendUniversityForMoreThan5Days">
+                                <input type="checkbox" id="unableToAttendUniversityForMoreThan5Days" name="unableToAttendUniversityForMoreThan5Days_" class="ck">
+                            </label>
+                            Unable to attend University for more than 5 days
+                        </td>
+                        <td>
+                            <label for="unableToWriteComfortablyInExaminationConditions">
+                                <input type="checkbox" id="unableToWriteComfortablyInExaminationConditions" name="unableToWriteComfortablyInExaminationConditions_" class="ck">
+                            </label>
+                            Unable to write comfortably in examination conditions
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h4 class="title_2">2) Details of Personal Extenuating Circumstances</h4>
+        
+            <tr class="period">
+                <td width="1%"><label for="startDate" id="start">From:</label></td>
+                <td width="39%"><input type="date" id="startDate" name="start_Date" lang="en" required></td>
+                <td width="1%"><label for="endDate" id="end">To:</label></td>
+                <td width="39%"><input type="date" id="endDate" name="end_Date" lang="en" required></td>
+            </tr>
+            <br>
+            <label for="detail" class="text">
+                <span id="inputText" >Description: </span>
+            </label>
+            <br>
+            <textarea name="textarea" id="detail"  rows="4" class="textArea" required placeholder="Write your comments..."></textarea>
+            
+            <h4 class="title_3">3) New Adjustments Requested </h4>
+        
+            <tbody class="tbody_2">
+                    <th>
+                        <label for="moduleId" id="module">Module:</label>
+                    <td>
+                        <select name="moduleName" id="moduleId" class="moduleSelect" >
+                            <option value="dyson01">dyson01</option>
+                            <option value="dyson02">dyson02</option>
+                            <option value="dyson03">dyson03</option>
+                            <option value="dyson04">dyson04</option>
+                        </select>
+                    </td>
+            </tbody>
+            <input type="submit" class="submitBtn"  value="Submit">
+            </form>
+        </section>
+        
+        
+        
+        <section class="examNav open">
+            <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#coursework">
+                            <i class='bx bx-receipt icon'></i>
+                            <span class="text nav-text">Coursework</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#pastYear">
+                            <i class='bx bx-news icon'></i>
+                            <span class="text nav-text">Past Year Paper</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#submission">
+                            <i class='bx bxs-file-import icon'></i>
+                            <span class="text nav-text">Submission</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#extension">
+                            <i class='bx bx-extension icon' ></i>
+                            <span class="text nav-text">Extension</span>
+                        </a>
+                    </li>
+                </ul>
+
+        </section>
+    </section>
+    
+    
+    
+    <nav class="sidebar close">
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="Main.html">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Timetable.html">
+                            <i class='bx bx-calendar icon'></i>
+                            <span class="text nav-text">Timetable</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Examination.html">
+                            <i class='bx bxs-pencil icon'></i>
+                            <span class="text nav-text">Examination</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Subjects.html">
+                            <i class='bx bx-book-open icon'></i>
+                            <span class="text nav-text">Subjects</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="PersonalTutor.html">
+                            <i class='bx bxs-user-detail icon'></i>
+                            <span class="text nav-text">Personal Tutor</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    </nav>
+    
+    
+    
+    
+    <script src="Examination.js"></script>
+</body>
+</html>

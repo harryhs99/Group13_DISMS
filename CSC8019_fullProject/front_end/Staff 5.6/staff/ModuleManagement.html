@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uploadFile</title>
+    <link rel="stylesheet" href="ModuleManagement.css"/>
+    <!---- Boxicons Icon ---->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-------- Top navBar------- -->
+
+    <section class="headerpage">
+        <button class="toggle" id="navbar_toggle"></button>
+    
+    <div class="title">
+            <img id="dysonLogo" src="../img/dysonLogo.png"> 
+            <span id="sub">Staff</span>
+            <img id="subjectLogo" src="../img/Staff.png">
+    </div>
+    
+    <div class="list">
+        <a href="StaffDashboard.html"><img id="homeLogo" src="../img/homeLogo.png"></a>
+        <img id="notification" src="../img/notificationLogo.png">
+        <img id="functionLogo" src="../img/functionLogo.png">
+        <a href="StaffLogin.html"><img id="profile" src="../img/profileLogo.png"></a>
+    </div>
+    
+</section>
+    
+</section>
+
+    <!---------- sidepanel------ -->
+    <nav class="sidebar" id="sidebar">
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="StaffDashboard.html">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="staffTimetable.html">
+                            <i class='bx bx-calendar icon'></i>
+                            <span class="text nav-text">Timetable</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="UndertakenModules.html">
+                            <i class='bx bxs-pencil icon'></i>
+                            <span class="text nav-text">UndertakenModules</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="CheckStuDetail.html">
+                            <i class='bx bx-book-open icon'></i>
+                            <span class="text nav-text">StuDetail</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="ModuleManagement.html">
+                            <i class='bx bxs-user-detail icon'></i>
+                            <span class="text nav-text">ModuleManagement</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--------- Main Part--------->
+    <div class="content">
+        <div class="select">
+            <label for="selectModule">Select A Module:</label>
+                <select id="selectModule">
+                    <option value=" "></option>
+                    <option value="CSC8019">CSC8019</option>
+                    <option value="CSC8016">CSC8016</option>
+                    <option value="CSC8014">CSC8014</option>
+                    <option value="CSC8012">CSC8012</option>
+                </select>
+        </div>
+        <div class="file">
+            <section class="upload1">
+                <h3 class="h3"><div class="moduleSelect"></div>Teaching Material</h3>
+                <input type="file" id="uploadFile" class="uploadFile" style="display: none;">
+                <label for="uploadFile" class="name">
+                    <span >Upload Files </span>
+                    <i class='bx bx-upload'></i>
+                </label>
+                    
+                <ul id="nameList">
+                        <!-- js -->
+                </ul>
+            </section>
+            
+            <section class="upload2">
+                <h3 class="recap"><div class="moduleSelect"></div> Recap</h3>
+                <input type="file" id="uploadVideo" class="uploadVideo" style="display: none;">
+                <label for="uploadVideo" class="video">
+                    <span >Upload Recap </span>
+                    <i class='bx bx-upload'></i>
+                </label>
+                    
+                <ul id="videoList">
+                        <!-- js -->
+                </ul>
+            </section>
+
+            <section class="announcementBox">
+                <h3 title="annTitle"><div class="moduleSelect"></div>Announcement</h3>
+                <input type="text" class="post"  id="post" name="post"><br>
+                <input type="button" class="submitBtn" id="submitBtn" value="post">
+            
+            </section>
+
+
+        </div>
+    </div>
+
+<script src="ModuleManagement.js"></script>
+</body>
+</html>

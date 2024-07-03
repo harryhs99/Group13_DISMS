@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Kanit; 
+}
+
+body{
+    background-image: url('img/background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+/*-------Top navbar-------*/
+
+.headerpage{
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6); 
+    position: fixed;
+    top: 0;
+}
+
+#navbar_toggle{
+   position: absolute;
+   width: 2rem;
+   height: 2rem;
+   top: 0.6rem;
+   left: 1.2rem;
+   border: none;
+   background-color: transparent; 
+   background: url(IMG/sidebar.png) center center no-repeat;
+   background-size: 19rem;
+   cursor: pointer;
+}
+
+#navbar_toggle:hover{
+    transform: scale(1.1);
+}
+
+
+
+#dysonLogo{
+    height: 2rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 4rem
+}
+
+#sub{
+    font-size: 2rem;
+    position: absolute;
+    left: 9.0rem;
+    color:#2196f3;
+}
+
+#subjectLogo{
+    position: absolute;
+    top: 0.3rem;
+    left: 17rem;
+    background-color: transparent;
+    height: 2.5rem;
+    border-radius: 1rem;
+}
+
+#homeLogo{
+    position: relative;
+    height: 2.3rem;
+    top: 0.4rem;
+    left: 75rem;
+}
+
+#homeLogo:hover{
+    transform: scale(1.1);
+}
+
+#notification{
+    position: relative;
+    height: 2.3rem;
+    top: 0.4rem;
+    left: 78rem;
+}
+
+#notification:hover{
+    transform: scale(1.1);
+}
+
+#functionLogo{
+    position: relative;
+    height: 2.3rem;
+    top: 0.4rem;
+    left: 81rem;
+}
+
+#functionLogo:hover{
+    transform: scale(1.1);
+}
+
+#profile{
+    position: relative;
+    height: 2.3rem;
+    top: 0.4rem;
+    left: 84rem;
+}
+
+#profile:hover{
+    transform: scale(1.1);
+}
+
+/*-------Body content-------*/
+
+#announcement{
+    opacity: 0.7;
+    background-color: white;
+    margin: 1rem;
+    height: 10rem;
+    width: 75.65rem;
+    position: absolute;
+    top: 3rem;
+    border-radius: 20px;
+}
+
+#ann{
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    left: 15rem;
+    top: 1rem;
+}
+
+#horn{
+    position: absolute;
+    height: 7rem;
+    left: 3rem;
+    top: 1rem;
+}
+
+
+.bodyContent{
+    margin: 0 9rem;
+}
+
+.subjectItem a {
+    color: indigo; /* default color for links */
+    text-decoration: none; /* Removes underline from all links */
+}
+
+.subjectItem a:visited {
+    color: indigo; /* keeps the color the same even after the link is visited */
+}
+
+
+#module1, #module2, #module3, #module4{
+    background-color: white;
+    margin: 12px;
+    height: 230px;
+    width: 36.3rem;
+    top: 14rem;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.7)
+}
+
+#module1{
+    position: absolute;
+    top: 15rem;
+}
+
+#module2{
+    position: absolute;
+    left: 48.5rem;
+    top: 15rem;
+}
+#module3{
+    position: absolute;
+    top: 31rem;
+}
+#module4{
+    position: absolute;
+    left: 48.5rem;
+    top: 31rem;
+}
+
+.modTitle{
+    font-size: 2rem;
+    position: relative;
+    left: 250px;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+#img1, #img2, #img3, #img4{
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    top: 2rem;
+    left: 2rem;
+}
+
+#action1,#action2,#action3,#action4{
+    position: relative;
+    display: block;
+    left: 250px;
+    top: 25px;
+    font-size: 1.4rem;
+    width: 100px;
+    
+}
+
+#action1 button,#action2 button,#action3 button,#action4 button{
+    border: solid 2px;
+    border-radius: 10px;
+    width: 230px;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #5bafe3;
+    color: #040761;
+    font-size: 28px;
+}
+
+#action1 button:hover,#action2 button:hover,#action3 button:hover,#action4 button:hover{
+    color: white;
+    background-color: midnightblue;
+}
+
+/*-------Side Panel-------*/
+.sidebar{
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    height: 100%;
+    width: 18rem;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar.close{
+    display: none;
+}
+
+
+.sidebar li{
+    height: 4rem;
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    font-size: 2.1rem;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar li .text{
+    font-size: 1.5rem; 
+}
+
+.sidebar li a{
+    height: 3rem;
+    width: 16.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 12px;
+    color: indigo; 
+}
+
+.sidebar li a:hover{
+    background-color: rgba(33, 150, 243, 0.2);
+    transform: scale(1.05);
+}
+

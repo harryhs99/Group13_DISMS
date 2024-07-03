@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UndertakenMdules</title>
+       <!---- Boxicons Icon ---->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="UndertakenModules.css"/>
+</head>
+
+<body>
+    <!-------- Top navBar------- -->
+
+    <section class="headerpage">
+        <button class="toggle" id="navbar_toggle"></button>
+    
+    <div class="title">
+            <img id="dysonLogo" src="../img/dysonLogo.png"> 
+            <span id="sub">Staff</span>
+            <img id="subjectLogo" src="../img/Staff.png">
+    </div>
+    
+    <div class="list">
+        <a href="StaffDashboard.html"><img id="homeLogo" src="../img/homeLogo.png"></a>
+        <img id="notification" src="../img/notificationLogo.png">
+        <img id="functionLogo" src="../img/functionLogo.png">
+        <a href="StaffLogin.html"><img id="profile" src="../img/profileLogo.png"></a>
+    </div>
+    
+</section>
+ 
+    
+<!---------- sidepanel------ -->
+    <nav class="sidebar" id="sidebar">
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="StaffDashboard.html">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="staffTimetable.html">
+                            <i class='bx bx-calendar icon'></i>
+                            <span class="text nav-text">Timetable</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="UndertakenModules.html">
+                            <i class='bx bxs-pencil icon'></i>
+                            <span class="text nav-text">UndertakenModules</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="CheckStuDetail.html">
+                            <i class='bx bx-book-open icon'></i>
+                            <span class="text nav-text">StuDetail</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="ModuleManagement.html">
+                            <i class='bx bxs-user-detail icon'></i>
+                            <span class="text nav-text">ModuleManagement</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------main part---------------- -->
+    <div class="content">
+        <div class="search">
+            <form action="" class="searchDetail" id="searchDetail">
+                 <label for="searchID" class="labelID">Student ID: </label>
+                 <input type="text" class="searchID" id="searchID" placeholder="stuID">
+                 <input type="submit" class="submitBtn" id="submitBtn" value="check">
+            </form>    
+        </div>
+        <div class="pane" >
+                <h2 class="title1">Detail:</h2>
+                <!-- display table -->
+                <table class="Undertakentable" id="Undertakentable"> 
+                    <thead>
+                        <tr>
+                            <th>StuID</th>
+<!--                            <th>StuName</th>-->
+                            <th>ModuleCode</th>
+<!--                            <th>Title</th>-->
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="Undertakentbody">
+                           
+                        <!-- insert data from DB ， I write something on js -->
+                    </tbody>
+                </table>   
+        </div>
+    </div>
+
+    <script src="UndertakenModule.js" ></script>
+</body>
+</html>

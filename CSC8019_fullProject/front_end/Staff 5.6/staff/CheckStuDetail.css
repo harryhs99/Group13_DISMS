@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media screen and (min-width: 200px) {
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Kanit; 
+}
+
+body{
+    background-image: url('../img/backgroundgreen.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+/*-------Top navbar-------*/
+
+.headerpage{
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6); 
+    position: fixed;
+    top: 0;
+}
+
+#navbar_toggle{
+   position: absolute;
+   width: 2rem;
+   height: 2rem;
+   top: 0.6rem;
+   left: 1.2rem;
+   border: none;
+   background-color: transparent; 
+   background: url('../img/sidebar.png') center center no-repeat;
+   background-size: 19rem;
+   cursor: pointer;
+}
+
+#navbar_toggle:hover{
+    transform: scale(1.1);
+}
+
+
+
+#dysonLogo{
+    height: 2rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 4rem
+}
+
+#sub{
+    font-size: 2rem;
+    position: absolute;
+    left: 9.0rem;
+    color:#2196f3;
+}
+
+#subjectLogo{
+    position: absolute;
+    top: 0.3rem;
+    left: 14rem;
+    background-color: transparent;
+    height: 2.5rem;
+    border-radius: 1rem;
+}
+
+#homeLogo{
+    position: relative;
+    height: 2.3rem;
+    top: 0.4rem;
+    left: 60rem;
+}
+
+#homeLogo:hover{
+    transform: scale(1.1);
+}
+
+#notification{
+    position: relative;
+    height: 2.3rem;
+    top: 0.4rem;
+    left: 65rem;
+}
+
+#notification:hover{
+    transform: scale(1.1);
+}
+
+#functionLogo{
+    position: relative;
+    height: 2.3rem;
+    top: 0.4rem;
+    left: 70rem;
+}
+
+#functionLogo:hover{
+    transform: scale(1.1);
+}
+
+#profile{
+    position: relative;
+    height: 2.3rem;
+    top: 0.4rem;
+    left: 75rem;
+}
+
+#profile:hover{
+    transform: scale(1.1);
+}
+
+/*---------------- sidebar------------------ */
+.sidebar{
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    height: 100%;
+    width: 18rem;
+    background-color: rgba(255, 255, 255,0.8);
+    z-index: 1;
+    transform: translateX(-18.75rem); /*hidden sidebar*/
+    overflow: hidden;
+}
+
+/* .sidebar.close{
+    display: none;
+} */
+
+.sidebar.show {
+    transform: translateX(0); /* show sidebar */
+}
+
+.sidebar li{
+    height: 4rem;
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    font-size: 1.5rem;
+    min-width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar li .text{
+    font-size: 1.25rem;
+}
+
+.sidebar li a{
+    height: 3rem;
+    width: 16.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 12px;
+    color: indigo; 
+}
+
+.sidebar li a:hover{
+    background-color: rgba(33, 150, 243, 0.2);
+    transform: scale(1.05);
+}
+
+/* --------main part-------- */
+.content{
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+.search{
+    position: absolute;
+    top:5rem;
+    left: 10rem;
+    width: 90rem;
+    height: 10rem;
+    font-size: 26px;
+}
+label,
+#displayName {
+    display: inline-block;
+    margin-right: 1rem; 
+}
+label,
+#displayEmail{
+    display: inline-block;
+    margin-right: 1rem; 
+    margin-left: 1rem;
+}
+.pane{
+    /* flex: 1; */
+    position: absolute;
+    /* left: 50%; */
+    top: 3rem;
+    left: 0;
+    right: 0;
+    padding: 0 3rem;
+    /* margin: 0 15rem; */
+    margin: 0 auto;
+    /* transform: translate(-50%, -50%); */
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    /* padding: 0.5rem; */
+    /* width: 35rem; */
+}
+.Detailtable{
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* width: 50rem; */
+    background-color: rgb(255,255,255,0.5);
+    font-size: 26px;
+    overflow: auto;
+}
+.Infotable{
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    right: 0;
+    margin: 4rem auto;
+    /* width: 35rem; */
+    background-color: rgb(255,255,255,0.5);
+    font-size: 26px;
+}
+
+tr td{
+    padding: 0.25rem 1rem;
+    /* width: 8rem; */
+    text-align: center;
+}
+.Detailtable td{
+    width: 12rem;
+    font-size: 24px;
+}
+.Infotable td{
+    width: 50rem;
+    height: 8rem;
+    font-size: 24px;
+}
+.assessmentTitle{
+    position: absolute;
+    top: 8rem;
+    left: 10rem;
+    color: black;
+}
+.infoTitle{
+    position: absolute;
+    top: 22rem;
+    left: 10rem;
+    right: 0;
+    color: black;
+}
+.searchDetail{
+    font-size: 30px;
+    color: black;
+}
+.searchLabel{
+    font-weight: 700;
+}
+.searchID{
+    font-size: 30px;
+    height: 1.75rem;
+    /* width: 6rem; */
+}
+.submitBtn{
+    font-size:26px ;
+    width: 5rem;
+}
+}

@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+       <!---- Boxicons Icon ---->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="StudentTimetable.css">
+</head>
+<body>
+
+     <!-------- Top navBar--------->
+     <section class="headerpage">
+        <button class="toggle" id="navbar_toggle"></button>
+    
+        <div class="title">
+                <img id="dysonLogo" src="img/dysonLogo.png">
+                <span id="sub">Staff</span>
+                <img id="subjectLogo" src="img/Staff.png">
+        </div>
+        
+        <div class="list">
+            <a href="StaffDashboard.html"><img id="homeLogo" src="img/homeLogo.png"></a>
+            <img id="notification" src="img/notificationLogo.png">
+            <img id="functionLogo" src="img/functionLogo.png">
+            <a href="StaffLogin.html"><img id="profile" src="img/profileLogo.png"></a>
+        </div>
+    </section>
+
+
+
+    <!---------- sidepanel------------->
+    <nav class="sidebar" id="sidebar">
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="StaffDashboard.html">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="staffTimetable.html">
+                            <i class='bx bx-calendar icon'></i>
+                            <span class="text nav-text">Timetable</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="UndertakenModules.html">
+                            <i class='bx bxs-pencil icon'></i>
+                            <span class="text nav-text">UndertakenModules</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="CheckStuDetail.html">
+                            <i class='bx bx-book-open icon'></i>
+                            <span class="text nav-text">StuDetail</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="ModuleManagement.html">
+                            <i class='bx bxs-user-detail icon'></i>
+                            <span class="text nav-text">ModuleManagement</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!------------------- Main part---------------->
+    <div class="mainPart">
+        <h1 class="timetableTitle">Check Timetable</h3>
+        <div class="showInfo">
+            <label for="selectDate" id="date">Select A Date:</label><br>
+            <input type="date" class="selectDate" id="selectDate">
+            <button id="show">Show Exist Timetable</button>
+        </div>
+        
+        
+        <table class="nov">
+            <thead class="index">
+                <tr>
+                    <th></th>
+                    <th class="day" id="day1">Monday</th>
+                    <th class="day" id="day2">Tuesday</th>
+                    <th class="day" id="day3">Wednesday</th>
+                    <th class="day" id="day4">Thursday</th>
+                    <th class="day" id="day5">Friday</th>
+                </tr>
+                <tr>
+                    <th class="t1"><div class="d1"></div></th>
+                    <th >Monday</th>
+                    <th >Tuesday</th>
+                    <th >Wednesday</th>
+                    <th >Thursday</th>
+                    <th >Friday</th>
+                </tr>
+            </thead>
+            <tbody class="content">
+                <tr >
+                    <td >9:00-11:00</td>
+                    <td class="td" id="1"></td>
+                    <td class="td" id="2"></td>
+                    <td class="td" id="3"></td>
+                    <td class="td" id="4"></td>
+                    <td class="td" id="5"></td>
+                    
+                </tr>
+                <tr>
+                    <td>11:00-13:00</td>
+                    <td class="td" id="6"></td>
+                    <td class="td" id="7"></td>
+                    <td class="td" id="8"></td>
+                    <td class="td" id="9"></td>
+                    <td class="td" id="10"></td>
+                </tr>
+                <tr >
+                    <td>13:00-15:00</td>
+                    <td class="td" id="11"></td>
+                    <td class="td" id="12"></td>
+                    <td class="td" id="13"></td>
+                    <td class="td" id="14"></td>
+                    <td class="td" id="15"></td>
+                  
+                </tr>
+                <tr>
+                    <td>15:00-17:00</td>
+                    <td class="td" id="16"></td>
+                    <td class="td" id="17"></td>
+                    <td class="td" id="18"></td>
+                    <td class="td" id="19"></td>
+                    <td class="td" id="20"></td>   
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>    
+
+    <script src="StudentTimetable.js"></script>
+</body>
+</html>

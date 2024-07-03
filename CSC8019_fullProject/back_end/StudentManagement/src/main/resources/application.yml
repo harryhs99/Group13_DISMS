@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 22vv7788
+    url: jdbc:mysql://localhost:3306/testDb?allowPublicKeyRetrieval=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+  mail:
+    host: smtp.163.com
+    port: 465
+    username: dinghangz2023@163.com
+    password: FWTWIUSMPWNFXXHI
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+          auth: true
+#          starttls:
+#            enable: true
+
+
+#mybatis:
+#  type-aliases-package: com.example.StudentManagement.entity
+#  mapper-locations: classpath:mapper/*.xml
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+

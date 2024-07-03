@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Timetable</title>
+    <link rel="stylesheet" href="Timetable.css"/>
+    <link rel="stylesheet" href="evo-calendar.min.css"/>
+    
+    <!---- Boxicons Icon ---->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    
+<body>
+    
+    <section class="headerpage">
+            <button class="toggle" id="navbar_toggle"></button>
+        
+        <div class="title">
+                <img id="dysonLogo" src="IMG/dysonLogo.png"> 
+                <span id="timetable">Timetable</span>
+                <img id="timetableLogo" src="IMG/timetableIcon.png">
+        </div>
+        
+        <div class="list">
+            <a href="Main.html"><img id="homeLogo" src="IMG/homeLogo.png"></a>
+            <img id="notification" src="IMG/notificationLogo.png">
+            <img id="functionLogo" src="IMG/functionLogo.png">
+            <a href="DysonLogin.html"><img id="profile" src="IMG/profileLogo.png"></a>
+        </div>
+        
+    </section>
+    
+    <section class="bodyContent">  
+        
+       <div id="calendar"></div>
+        
+    </section>
+    
+    
+        <nav class="sidebar close">
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="Main.html">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Timetable.html">
+                            <i class='bx bx-calendar icon'></i>
+                            <span class="text nav-text">Timetable</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Examination.html">
+                            <i class='bx bxs-pencil icon'></i>
+                            <span class="text nav-text">Examination</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Subjects.html">
+                            <i class='bx bx-book-open icon'></i>
+                            <span class="text nav-text">Subjects</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="PersonalTutor.html">
+                            <i class='bx bxs-user-detail icon'></i>
+                            <span class="text nav-text">Personal Tutor</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    </nav>
+    
+    
+    
+    
+    <script src="Timetable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+                
+                theme: "Default",
+                calendarEvents: [
+                    {
+                     id: 'event1', // Event's ID (required)
+                     name: "New Year", // Event name (required)
+                                 date: "January/1/2020", // Event date (required)
+                     type: "holiday", // Event type (required)
+                     everyYear: true // Same event every year (optional)
+                    },
+                     {
+                     name: "Vacation Leave",
+                     badge: "02/13 - 02/15", // Event badge (optional)
+                     date: ["February/13/2020", "February/15/2020"], // Date range
+                     description: "Vacation leave for 3 days.", // Event description (optional)
+                     type: "event",
+                     color: "#63d867" // Event custom color (optional)
+                     }
+                 ]
+            })
+        })
+    </script>
+</body>
+</html>
