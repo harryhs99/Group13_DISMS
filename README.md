@@ -184,3 +184,7 @@ our application using the concurrent think aloud method (CTA) to gauge any impro
 could be made. We also planned to try and get a selected group of people outside of the project to conduct a
 closed-beta test to gather some user feedback. However, due to time constraints we were not able to undertake
 these testing methods.
+
+## Project Members
+H. Hainsworth-Staples, S. Alimohammadi, R.J. Cheong, M. Hsueh, Z. Liang, J. Liu , Y. Liu, S. Yang
+
